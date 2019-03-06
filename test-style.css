@@ -9,6 +9,11 @@
 	position: relative;
 }
 
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 
 .column{
 	background-color: gray;
@@ -37,7 +42,7 @@ hr{
 	margin-top:15px;
 	width: 950px;	
 }
-.content{
+.content {
 	width: 1050px;
 	margin: 23px auto 0;
 }
@@ -79,20 +84,18 @@ hr{
 }
 
 .flex-container{
-	display: flex;
+	display: block;
 	flex-wrap: wrap;
 	flex-direction: row;
     margin-top:10px;
-    
-    
 }
 
 .flex-container > div {
 	background-color: #f1f1f1;
     width: 90px;
+	float: left;
     height: 109px;
-    margin: 16px;
-    margin: 10 15 0 0;
+	margin: 10px 15px 0 0;
     padding: 20px;
     font-size: 30px;
  }
@@ -107,7 +110,7 @@ hr{
 	background-color: #f1f1f1;
     width: 328px;
     height: 163px;
-    margin: 10 15 0 0;
+    margin: 10px 15px 0 0;
     padding: 20px;
     font-size: 30px;
 }
@@ -124,10 +127,8 @@ hr{
     background-color: #f1f1f1;
     width: 259px;
     height: 139px;
-    margin: 26px;
-    margin-top: 24px;
-    margin-left: 0px;
-    padding: 20px;
+	margin: 24px 26px 26px 0px;
+	padding: 20px;
     font-size: 30px;
 }
 
@@ -143,11 +144,8 @@ hr{
     background-color: #f1f1f1;
     width: 309px;
     height: 76px;
-    margin: 27px;
-    margin-top: 1px;
-    margin-left: 0px;
-    font-size: 30px;
-	
+	margin: 1px 27px 27px 0;
+	font-size: 30px;
 }
   
 .line1 {
